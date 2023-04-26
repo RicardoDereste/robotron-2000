@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
+    <title>Robotron 2000</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+        <section class="robotron">
+            <img class="robot" src="img/robotron.png" alt="Robotron">
+            <figcaption class="title">ROBOTRON <br>2000</figcaption>
+            <div class="container-btn-color">
+                <span class="title-color">Choose your color</span>
+                <button class="btn-color btn-active" data-color="blue"></button>
+                <button class="btn-color" data-color="yellow"></button>
+                <button class="btn-color" data-color="white"></button>
+                <button class="btn-color" data-color="black"></button>
+                <button class="btn-color" data-color="pink"></button>
+                <button class="btn-color" data-color="red"></button>
+            </div>
+        </section>
+
+        <section class="box statistics">
+            <div class="statistic">
+                <p class="statistic-title">Strength</p>
+                <div class="statistic-value">
+                    <p class="statistic-number" data-statistic="strength">00</p>
+                </div>
+            </div>
+            <div class="statistic">
+                <p class="statistic-title">Power</p>
+                <div class="statistic-value">
+                    <p class="statistic-number" data-statistic="power">00</p>
+                </div>
+            </div>
+            <div class="statistic">
+                <p class="statistic-title">Energy</p>
+                <div class="statistic-value">
+                    <p class="statistic-number" data-statistic="energy">00</p>
+                </div>
+            </div>
+            <div class="statistic">
+                <p class="statistic-title">Speed</p>
+                <div class="statistic-value">
+                    <p class="statistic-number" data-statistic="speed">00</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="equipments">
+            <form action="" class="assembler">
+                <div class="box assembler-content">
+                    <div class="piece">
+                        <label for="" class="piece-title">Arms</label>
+                        <div class="control">
+                            <buttom class="control-adjustment" data-control="-" data-piece="arms">-</buttom>
+                            <input type="text" class="control-counter" value="0" data-counter>
+                            <buttom class="control-adjustment" data-control="+" data-piece="arms">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="line">
+                    <div class="piece">
+                        <label for="" class="piece-title">Shield</label>
+                        <div class="control">
+                            <buttom class="control-adjustment" data-control="-" data-piece="shield">-</buttom>
+                            <input type="text" class="control-counter" value="0" data-counter>
+                            <buttom class="control-adjustment" data-control="+" data-piece="shield">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="line">
+                    <div class="piece">
+                        <label for="" class="piece-title">Cores</label>
+                        <div class="control">
+                            <buttom class="control-adjustment" data-control="-" data-piece="cores">-</buttom>
+                            <input type="text" class="control-counter" value="0" data-counter>
+                            <buttom class="control-adjustment" data-control="+" data-piece="cores">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="line">
+                    <div class="piece">
+                        <label for="" class="piece-title">Legs</label>
+                        <div class="control">
+                            <buttom class="control-adjustment" data-control="-" data-piece="legs">-</buttom>
+                            <input type="text" class="control-counter" value="0" data-counter>
+                            <buttom class="control-adjustment" data-control="+" data-piece="legs">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="line">
+                    <div class="piece">
+                        <label for="" class="piece-title">Rockets</label>
+                        <div class="control">
+                            <buttom class="control-adjustment" data-control="-" data-piece="rockets">-</buttom>
+                            <input type="text" class="control-counter" value="0" data-counter>
+                            <buttom class="control-adjustment" data-control="+" data-piece="rockets">+</buttom>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Start Production" class="production" id="production">
+            </form>
+        </section>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>
